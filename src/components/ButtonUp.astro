@@ -1,0 +1,76 @@
+<section>
+  <button id='mainButton'>
+    <span class='mainConatiner'>
+      <span class='mainContent'>
+        <i class='fas fa-arrow-up'></i>
+      </span>
+    </span>
+  </button>
+</section>
+
+<style>
+  #mainButton {
+    padding: 0;
+    margin: 0;
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--bg-color);
+  }
+
+  #mainButton:hover .mainContent::before {
+    width: calc(100% + 2rem);
+  }
+
+  .mainConatiner {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid var(--text-color-III);
+    box-shadow: inset 0 0 0 0.1rem transparent;
+  }
+
+  .mainContent::before {
+    top: 0;
+    width: 0;
+    z-index: -1;
+    content: '';
+    left: -0.8rem;
+    display: block;
+    bottom: -0.1rem;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--text-color-III);
+  }
+</style>
+
+<script>
+  let upbutton = document.getElementById('mainButton');
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      upbutton!.style.display = 'block';
+      upbutton!.style.transition = 'display 2s';
+    } else {
+      upbutton!.style.display = 'none';
+    }
+  }
+
+  upbutton!.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+</script>
