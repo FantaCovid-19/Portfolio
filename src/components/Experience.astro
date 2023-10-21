@@ -1,0 +1,82 @@
+<section class='home-exp'>
+  <h2 class='main-title-h2'>Experiencia</h2>
+
+  <div class='card-exp'>
+    <div class='card-details'>
+      <b>Github MrFantasma</b>
+      <p>Dic 2022 - Presente</p>
+    </div>
+    <div class='card-content'>
+      <h3 class='card-title'>
+        Desarrollador Back-End, <br />
+        <b>Concepción, Chile</b>
+      </h3>
+      <p class='card-text'>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatem quia est illum ex qui modi tempora mollitia iure quisquam, nam beatae. Rem eligendi temporibus delectus minus sint
+        reiciendis ipsa.
+      </p>
+    </div>
+  </div>
+
+  <div class='card-exp'>
+    <div class='card-details'>
+      <b>Clínica Sanatorio Alemán</b>
+      <p>Sep 2022 - Nov 2022</p>
+    </div>
+    <div class='card-content'>
+      <h3 class='card-title'>
+        Soporte TI y Desarrollador FullStack,
+        <br /><b>Concepción, Chile</b>
+      </h3>
+      <p class='card-text'>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatem quia est illum ex qui modi tempora mollitia iure quisquam, nam beatae. Rem eligendi temporibus delectus minus sint
+        reiciendis ipsa.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .home-exp {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .card-exp {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 250px 2.5fr;
+  }
+
+  .card-details {
+    margin: 16px 0 0 0;
+    color: var(--text-color-I);
+  }
+
+  .card-details p {
+    margin: 0;
+    color: var(--text-color-II);
+  }
+
+  .card-title {
+    margin: 16px 0 0 0;
+    color: var(--text-color-I);
+  }
+
+  .card-title b {
+    font-size: 1.15rem;
+    color: var(--text-color-III);
+  }
+
+  .card-text {
+    color: var(--text-color-II);
+  }
+
+  @media only screen and (max-width: 650px) {
+    .card-exp {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+</style>

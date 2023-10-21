@@ -1,0 +1,60 @@
+<section class='home-contact'>
+  <h2 class='main-title-h2'>Contactos</h2>
+
+  <div class='container-contact'>
+    <div class='item-contact'>
+      <p class='contact-subtitle'>Email</p>
+      <div class='contact-content'>
+        <a href='mailto:contact@mrfantasma.com'>
+          contact@mrfantasma.com <i class='fas fa-external-link-alt'></i>
+        </a>
+      </div>
+    </div>
+
+    <div class='item-contact'>
+      <p class='contact-subtitle'>Resume</p>
+      <div class='contact-content'>
+        <a href='/Resume.pdf'>
+          Ver Resume <i class='fas fa-external-link-alt'></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .container-contact {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item-contact {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-subtitle {
+    color: var(--text-color-II);
+  }
+
+  .contact-content {
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .contact-content a {
+    color: var(--text-color-I);
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 650px) {
+    .container-contact {
+      display: flex;
+      flex-direction: column;
+      gap 0
+    }
+  }
+</style>

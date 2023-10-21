@@ -1,0 +1,227 @@
+<section class='home-skills'>
+  <h2 class='main-title-h2'>Tecnologias</h2>
+
+  <div class='container-skills'>
+
+    <div class='skill-item'>
+      <h3 class='main-title-h3'>Front-End</h3>
+      <ul>
+        <li>
+          <img
+          class='skill-icon'
+          src='/svg/html5.svg'
+          />&nbsp; HTML
+        </li>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/css3.svg'
+          />&nbsp; CSS
+        </li>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/astro.svg'
+          />&nbsp; Astro
+        </li>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/react.svg'
+          />&nbsp; React.JS
+        </li>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/nextdotjs.svg'
+          />&nbsp; Next.JS
+        </li>
+      </ul>
+    </div>
+
+    <div class='skill-item'>
+      <h3 class='main-title-h3'>Back-End</h3>
+      <ul>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/nodedotjs.svg'
+          />&nbsp; Node.JS
+        </li>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/express.svg'
+          />&nbsp; Express.JS
+        </li>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/typescript.svg'
+          />&nbsp; TypeScript
+        </li>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/javascript.svg'
+          />&nbsp; JavaScript
+        </li>
+      </ul>
+    </div>
+
+    <div class='skill-item'>
+      <h3 class='main-title-h3'>DataBase</h3>
+      <ul>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/mariadb.svg'
+          />&nbsp; MariaDB
+        </li>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/mysql.svg'
+          />&nbsp; MySQL
+        </li>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/mongodb.svg'
+          />&nbsp; MongoDB
+        </li>
+      </ul>
+    </div>
+
+    <div class='skill-item'>
+      <h3 class='main-title-h3'>DevOps</h3>
+      <ul>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/docker.svg'
+          />&nbsp; Docker
+        </li>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/git.svg'
+          />&nbsp; Git
+        </li>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/github.svg'
+          />&nbsp; Github
+        </li>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/cloudflare.svg'
+          />&nbsp; Cloudflare
+        </li>
+      </ul>
+    </div>
+
+    <div class='skill-item'>
+      <h3 class='main-title-h3'>Cloud</h3>
+      <ul>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/amazonaws.svg'
+          />&nbsp; AWS
+        </li>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/googlecloud.svg'
+          />&nbsp; GCloud
+        </li>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/linux.svg'
+          />&nbsp; Linux
+        </li>
+        <li>
+          <img
+            class='skill-icon'
+            src='/svg/windows.svg'
+          />&nbsp; Windows
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .home-skills {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .container-skills {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .skill-item {
+    color: var(--text-color-I);
+  }
+
+  .skill-item h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-color-II);
+  }
+
+  .skill-item ul {
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .skill-item li {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    border: 0.6px solid var(--text-color-III);
+  }
+
+  .skill-item li:hover {
+    background-color: var(--text-color-III);
+  }
+
+  .skill-icon {
+    width: 16px;
+    height: 16px;
+    filter: invert(1);
+  }
+
+  @media only screen and (max-width: 650px) {
+    .home-skills {
+      margin-bottom: 1rem;
+    }
+
+    .container-skills {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .skill-item {
+      margin-bottom: 1rem;
+    }
+
+    .skill-item ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+</style>
