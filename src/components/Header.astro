@@ -1,20 +1,16 @@
 <header class='container-header'>
   <nav class='nav-header'>
-    <a href='/'>
-      <p class='nav-title'>MrFantasma</p>
-    </a>
+    <a href='/' class='nav-title'> >_ MrFantasma</a>
 
-    <ul class='nav-menu'>
-      <li class='nav-menu-link'>
-        <a href='/'>Home</a>
-      </li>
-      <li class='nav-menu-link'>
-        <a href='/'>About</a>
-      </li>
-      <li class='nav-menu-link'>
-        <a href='/'>Projects</a>
-      </li>
-    </ul>
+    <div class='nav-list' id='nav-list-id'>
+      <a class='nav-menu'>Home</a>
+      <a class='nav-menu'>About</a>
+      <a class='nav-menu'>Proyects</a>
+    </div>
+
+    <button class='nav-toggle' id='nav-toggle-id'>
+      <i class='fas fa-bars'></i>
+    </button>
   </nav>
 </header>
 
@@ -49,7 +45,34 @@
   .nav-title {
     margin: 0;
     color: var(--text-color-I);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .nav-list .show {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color-transparent);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .nav-menu {
@@ -59,4 +82,45 @@
     display: flex;
     gap: 1rem;
   }
+
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+      color: var(--text-color-I);
+    }
+
+    .nav-list {
+      display: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 1rem;
+    }
+
+    .nav-menu a {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  }
 </style>
+
+<script>
+  let navButton = document.getElementById('nav-toggle-id');
+  let showNav = false;
+
+  navButton!.addEventListener('click', () => {
+    let navList = document.getElementById('nav-list-id');
+
+    if (showNav) {
+      navList!.classList.remove('show');
+      showNav = false;
+    } else {
+      navList!.classList.add('show');
+      showNav = true;
+    }
+  });
+</script>
