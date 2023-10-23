@@ -12,7 +12,7 @@ const { cardImage, cartLocation, cardTitle, cardSkills, cardUrl } = Astro.props;
 
 <a class=`card-project ${cartLocation}` href=`/project/${cardUrl}`>
   <div class='container'>
-    <img src={cardImage} />
+    <img src={cardImage} alt='Project Img' />
 
     <div class='card-project-content'>
       <div class='card-project-container'>
