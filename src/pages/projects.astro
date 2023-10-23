@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CardProyect from '../components/CardProyect.astro';
+---
+
+<Layout title='Proyectos | MrFantasma'>
+  <h3 class='main-title-h3'>MrFantasma <i class='fas fa-angle-right'></i>&nbsp;<b>Proyectos</b></h3>
+
+  <section class='project-main'>
+    <CardProyect cardImage='/img/proyects_1.png' cartLocation='div-1' cardTitle='Portfolio | MrFantasma' cardSkills='HTML • CSS3 • JavaScript • Astro' cardUrl='1' />
+    <!-- <CardProyect cardImage='/img/proyects_1.png' cartLocation='div-2' cardTitle='Portfolio | MrFantasma' cardSkills='HTML • CSS3 • JavaScript • Astro' cardUrl='1' />
+    <CardProyect cardImage='/img/proyects_1.png' cartLocation='div-3' cardTitle='Portfolio | MrFantasma' cardSkills='HTML • CSS3 • JavaScript • Astro' cardUrl='1' /> -->
+  </section>
+
+  <!-- <section class='project-main'>
+    <CardProyect cardImage='/img/proyects_1.png' cartLocation='div-4' cardTitle='Portfolio | MrFantasma' cardSkills='HTML • CSS3 • JavaScript • Astro' cardUrl='1' />
+    <CardProyect cardImage='/img/proyects_1.png' cartLocation='div-5' cardTitle='Portfolio | MrFantasma' cardSkills='HTML • CSS3 • JavaScript • Astro' cardUrl='1' />
+    <CardProyect cardImage='/img/proyects_1.png' cartLocation='div-6' cardTitle='Portfolio | MrFantasma' cardSkills='HTML • CSS3 • JavaScript • Astro' cardUrl='1' />
+  </section> -->
+</Layout>
+
+<style>
+  .main-title-h3 b {
+    color: var(--text-color-III);
+  }
+
+  .project-main {
+    width: 100%;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0.5rem;
+  }
+
+  @media only screen and (max-width: 650px) {
+    .project-main {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+</style>
