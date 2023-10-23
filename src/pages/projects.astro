@@ -4,7 +4,7 @@ import CardProyect from '../components/CardProyect.astro';
 ---
 
 <Layout title='Proyectos | MrFantasma'>
-  <h3 class='main-title-h3'>MrFantasma <i class='fas fa-angle-right'></i>&nbsp;<b>Proyectos</b></h3>
+  <h3 class='main-title-h3'><a href='/'>MrFantasma</a>&nbsp;<i class='fas fa-angle-right'></i>&nbsp;<b>Proyectos</b></h3>
 
   <section class='project-main'>
     <CardProyect cardImage='/img/proyects_1.png' cartLocation='div-1' cardTitle='Portfolio | MrFantasma' cardSkills='HTML • CSS3 • JavaScript • Astro' cardUrl='1' />
@@ -22,6 +22,11 @@ import CardProyect from '../components/CardProyect.astro';
 <style>
   .main-title-h3 b {
     color: var(--text-color-III);
+  }
+
+  .main-title-h3 a {
+    color: var(--text-color-I);
+    text-decoration: none;
   }
 
   .project-main {

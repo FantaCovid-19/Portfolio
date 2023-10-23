@@ -8,7 +8,7 @@ const { preview, link } = {
 ---
 
 <Layout title='Proyecto | MrFantasma'>
-  <h3 class='main-title-h3'>Proyecto <i class='fas fa-angle-right'></i> Proyectos <i class='fas fa-angle-right'></i>&nbsp;<b>Portfolio</b></h3>
+  <h3 class='main-title-h3'><a href='/'>MrFantasma</a>&nbsp;<i class='fas fa-angle-right'></i>&nbsp;<a href='/projects'>Proyectos</a>&nbsp;<i class='fas fa-angle-right'></i>&nbsp;<b>Portfolio</b></h3>
 
   <section class='project-images'>
     <img class='div-1' src='/img/project/1.png' id='img1' />
@@ -95,6 +95,11 @@ const { preview, link } = {
 <style>
   .main-title-h3 b {
     color: var(--text-color-III);
+  }
+
+  .main-title-h3 a {
+    color: var(--text-color-I);
+    text-decoration: none;
   }
 
   .project-title p {
